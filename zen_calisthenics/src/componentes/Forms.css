@@ -1,10 +1,43 @@
 
 form{
     background: #85BDBF;
-    width: 80%;
+    width: 70%;
     border-radius: 1rem;
     box-shadow: 10px 5px 5px #57737A;
     position: relative;
     top: 10rem;
     padding: 2rem;
+    margin: auto;
+}
+
+.input{
+    width: 85%;
+    font-size: 1.5rem;
+    display: flex;
+    margin: auto;
+    border-radius: 0.5rem;
+    border-color: #fff;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 0 ;
+}
+
+.botonIngresar{
+    width: 88%;
+    display: flex;
+    margin: auto;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    color:#fff ;
+    background: #176087;
+    border-color: #176087;
+    border-radius: 0.5rem;
+    box-shadow: none;
 }
