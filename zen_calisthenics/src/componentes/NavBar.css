@@ -5,6 +5,7 @@
     position: absolute;
     display: flex;
     justify-content: space-around;
+    top: 0;
 }
 
 .logo{
@@ -20,5 +21,25 @@
 .icon{
     width: 3rem;
     height: 3rem;
-    margin: auto;
+    position: relative;
+    right: 1.5rem;
+    top: 1rem;
+}
+
+@media only screen and (min-width: 768px){
+    .logo{
+        padding-left: 1.5rem;
+        
+    }
+    .nombre{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .nombre{
+        font-size: 2.5rem;
+        
+    }
 }

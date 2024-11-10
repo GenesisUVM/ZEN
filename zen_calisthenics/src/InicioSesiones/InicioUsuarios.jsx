@@ -10,8 +10,10 @@ function InicioUsuarios(){
         <div className="inicioSesiones">
           <NavBar />
           <FormUsuario />
-          <a href="#" className="linkContraseña">Recuperar Contraseña</a>
-          <Link to={'/creaUsuario'} className="linkContraseña">Crear Usuario Nuevo</Link>
+          <div className='contLink'>
+            <a href="#" className="linkContraseña">Recuperar Contraseña</a>
+            <Link to={'/creaUsuario'} className="linkContraseña">Crear Usuario Nuevo</Link>
+          </div>
           <Footer />
         </div>
     )

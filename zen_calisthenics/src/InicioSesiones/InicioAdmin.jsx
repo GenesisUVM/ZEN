@@ -9,7 +9,9 @@ function InicioAdmin(){
         <div className="inicioSesiones">
           <NavBar />
           <FormAdm />
-          <a href="#" className="linkContraseña">Recuperar contraseña</a>
+          <div className="contLink">
+              <a href="#" className="linkContraseña">Recuperar contraseña</a>
+          </div>
           <Footer />
         </div>
     )
