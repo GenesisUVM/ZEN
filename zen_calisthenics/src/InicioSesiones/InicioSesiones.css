@@ -1,0 +1,13 @@
+.inicioSesiones{
+    background: #C2FCF7;
+    height: 100vh;
+}
+
+.linkContraseña{
+    color: #040F0F;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    top: 12rem;
+    padding: 1rem 2rem;
+}

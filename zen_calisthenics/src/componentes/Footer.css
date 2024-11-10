@@ -1,0 +1,14 @@
+.footerIniSesion{
+    background: #57737A;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.imgIcons{
+    width: 4.5rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
