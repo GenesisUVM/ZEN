@@ -1,0 +1,18 @@
+.contUsuario{
+    width: 30%;
+    background: #85BDBF;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.fotoPerfil{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.nameUsuario{
+    font-size: 1.5rem;
+    color: #000;
+}
