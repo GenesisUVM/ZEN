@@ -1,0 +1,13 @@
+.contConfiguracion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.imgIcon{
+    width: 2.5rem;
+}
+
+.contConfiguracion p{
+    font-size: 1.5rem;
+}

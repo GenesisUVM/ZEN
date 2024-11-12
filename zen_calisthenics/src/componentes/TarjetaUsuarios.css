@@ -3,16 +3,35 @@
     background: #85BDBF;
     border-radius: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
+   
+    padding: 1.5rem;
+    margin: 2.5rem;
 }
 
 .fotoPerfil{
     width: 80%;
     margin: auto;
-    padding: 1rem;
+    
 }
 
 .nameUsuario{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #000;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+@media only screen and (min-width: 800px){
+    .contUsuario{
+        width: 50%;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .contUsuario{
+        width: 45%;
+    }
 }

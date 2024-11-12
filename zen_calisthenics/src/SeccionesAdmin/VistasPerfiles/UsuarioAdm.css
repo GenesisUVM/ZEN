@@ -1,0 +1,31 @@
+body{
+    background: #C2FCF7;
+}
+.contPerfiles{
+    display: grid;
+    position: relative;
+    top: 8rem;
+    grid-template-columns: repeat(2, 1fr);
+    
+    justify-items: center;
+    
+}
+.configAdmin{
+    background: #85BDBF;
+    
+}
+
+
+
+@media only screen and (min-width: 800px){
+    .contPerfiles{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .contPerfiles{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
