@@ -12,3 +12,10 @@
     cursor: pointer;
     margin: 0.5rem 0;
 }
+
+.footerAdmi{
+    width: 100%;
+    background: #57737A;
+    display: flex;
+    justify-content: space-around;
+}

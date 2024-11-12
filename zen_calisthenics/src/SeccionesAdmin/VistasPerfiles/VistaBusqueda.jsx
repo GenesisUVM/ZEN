@@ -1,6 +1,7 @@
 import NavBar from "../../componentes/NavBar"
 import FooterAdm from "../../componentes/FooterAdm"
 import Busqueda from "../../componentes/Busqueda"
+import TarjetaUsuarios from "../../componentes/TarjetaUsuarios"
 
 
 function VistaBusqueda(){
@@ -8,6 +9,7 @@ function VistaBusqueda(){
         <>
         <NavBar />
         <Busqueda />
+        <TarjetaUsuarios />
         <FooterAdm />
         </>
     )
