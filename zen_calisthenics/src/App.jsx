@@ -18,15 +18,17 @@ function App() {
   
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ConfAdm />} />
+      <Route path='/' element={<UsuariosRecientes />} /> 
+        <Route path='/busqueda' element={<VistaBusqueda />} /> 
+        <Route path='/alfabetico' element={<UsuariosAlfabetico />} />
+        <Route path='/guardados' element={<UsuariosGuardados />} />
+        <Route path="/sesiones" element={<InicioAdmin />} />
+        <Route path="/configuracion" element={<ConfAdm />} />
         <Route path='/administrador' element={<InicioAdmin />} />
         <Route path='/usuarios' element={<InicioUsuarios />} />
         <Route path='/creaUsuario' element={<CreacionUsuario />} /> 
 
-        <Route path='/recientes' element={<UsuariosRecientes />} /> 
-        <Route path='/busqueda' element={<VistaBusqueda />} /> 
-        <Route path='/alfabetico' element={<UsuariosAlfabetico />} />
-        <Route path='/guardados' element={<UsuariosGuardados />} />
+        
           
       </Routes> 
     </BrowserRouter>   

@@ -1,3 +1,4 @@
+import { Link} from 'react-router-dom';
 import link1 from '../img/modo-nocturno.png'
 import link2 from '../img/cursor.png'
 import link3 from '../img/lapiz.png'
@@ -8,11 +9,11 @@ import './ContConfig.css'
 function ContConfig(){
     return(
         <div className="contConfiguracion">
-            <a className='enlaceC'><img src={link1} alt="logo Modo nocturno" className='imgIcon'/></a><p>Modo Nocturno</p>
-            <a className='enlaceC'><img src={link2} alt="logo Modo nocturno" className='imgIcon'/></a><p>Cambio Contraseña</p>
-            <a className='enlaceC'><img src={link3} alt="logo Modo nocturno" className='imgIcon'/></a><p>Editar Usuarios</p>
-            <a className='enlaceC'><img src={link4} alt="logo Modo nocturno" className='imgIcon'/></a><p>Eliminar Usuarios</p>
-            <a href="" className='enlaceC'>Cerrar Sesion</a>
+            <a ><img src={link1} alt="logo Modo nocturno" className='imgIcon'/></a><p className='enlaceC'>Modo Nocturno</p>
+            <a ><img src={link2} alt="logo Modo nocturno" className='imgIcon'/></a><p className='enlaceC'>Cambio Contraseña</p>
+            <a ><img src={link3} alt="logo Modo nocturno" className='imgIcon'/></a><p className='enlaceC'>Editar Usuarios</p>
+            <a ><img src={link4} alt="logo Modo nocturno" className='imgIcon'/></a><p className='enlaceC'>Eliminar Usuarios</p>
+            <div></div><Link to={'/administrador'} className='enlaceC'>Cerrar Sesion</Link>
         </div>
     )
 };
