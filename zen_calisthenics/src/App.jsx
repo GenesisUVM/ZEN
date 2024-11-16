@@ -1,3 +1,5 @@
+import React from 'react';
+import 'vite/modulepreload-polyfill'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import InicioAdmin from './InicioSesiones/InicioAdmin'
