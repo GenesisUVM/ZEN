@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link} from 'react-router-dom';
 import './Forms.css'
 
 
@@ -9,7 +11,7 @@ function FormCreaUsuario(){
             <label className='label'>Ingrese Correo<input type="email" name="correo" className="input"/></label>
             <label className='label'>Ingrese Contraseña<input type="text" name="contrasena" className="input"/></label>
             <label className='label'>Ingrese Telefono<input type="number" name="telefono" className="input"/></label>
-            <button className="botonIngresar">Registrar</button>
+            <Link to={'/usuarios'} className="botonIngresar">Registrar</Link>
         </form>
     )
 };

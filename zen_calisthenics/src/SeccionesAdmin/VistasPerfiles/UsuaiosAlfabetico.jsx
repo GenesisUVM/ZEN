@@ -1,3 +1,4 @@
+import React from 'react';
 import NavBar from "../../componentes/NavBar"
 import TarjetaUsuarios from "../../componentes/TarjetaUsuarios"
 import FooterAdm from "../../componentes/FooterAdm"

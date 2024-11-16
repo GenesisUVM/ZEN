@@ -1,3 +1,4 @@
+import React from 'react';
 import NavBar from "../componentes/NavBar"
 import FormCreaUsuario from "../componentes/FormCreaUsuario"
 import Footer from "../componentes/Footer"

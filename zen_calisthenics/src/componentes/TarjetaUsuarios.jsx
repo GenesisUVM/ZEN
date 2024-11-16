@@ -1,3 +1,4 @@
+import React from 'react';
 import foto from '../img/usuario.png'
 import'./TarjetaUsuarios.css'
 
