@@ -4,7 +4,7 @@ import FooterUsuario from '../componentes/FooterUsuarios';
 import NavBar from '../componentes/NavBar';
 
 
-function EstadisticasU(){
+function Calendario(){
     return(
         <>
         <NavBar />
@@ -14,4 +14,4 @@ function EstadisticasU(){
     )
 };
 
-export default EstadisticasU
+export default Calendario

@@ -10,7 +10,10 @@ import UsuariosGuardados from "./SeccionesAdmin/VistasPerfiles/UsuariosGuardados
 import UsuariosRecientes from "./SeccionesAdmin/VistasPerfiles/UsuariosRecientes";
 import VistaBusqueda from "./SeccionesAdmin/VistasPerfiles/VistaBusqueda";
 import ConfAdm from './SeccionesAdmin/VistasPerfiles/ConfAdm'
-import Inicio from './SeccionesUsuarios/Inicio';
+import Inicio from './SeccionesUsuarios/Calendario';
+import IngresoDatos from './SeccionesUsuarios/IngresoDatos';
+import EstadisticasU from './SeccionesUsuarios/EstadisticasU';
+import Calendario from './SeccionesUsuarios/Calendario';
 
 
 
@@ -30,6 +33,9 @@ function App() {
         <Route path='/alfabetico' element={<UsuariosAlfabetico />} />
         <Route path='/guardados' element={<UsuariosGuardados />} />
         <Route path='/inicioU' element={<Inicio />} />
+        <Route path='/calendario' element={<Calendario />} />
+        <Route path='/ingresarDatos' element={<IngresoDatos />} />
+        <Route path='/estadisticas' element={<EstadisticasU />} />
           
       </Routes> 
     </BrowserRouter>   

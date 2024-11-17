@@ -4,14 +4,15 @@ import FooterUsuario from '../componentes/FooterUsuarios';
 import NavBar from '../componentes/NavBar';
 
 
-function EstadisticasU(){
+function IngresoDatos(){
     return(
-        <>
+        <div className='contDatos'>
         <NavBar />
 
         <FooterUsuario />
-        </>
+        </div>
     )
 };
 
-export default EstadisticasU
+
+export default IngresoDatos

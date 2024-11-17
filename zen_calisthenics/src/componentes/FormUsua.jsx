@@ -8,7 +8,7 @@ function FormUsuario(){
         <form method='post' className='formUsu'>
             <label className='label'>Ingrese Ususario<input type="text" name="usuario" className="input" /></label>
             <label className='label'>Ingrese Contraseña<input type="text" name="contrasena" className="input"/></label>
-            <Link to={'/inicioU'} className="botonIngresar">Ingresar</Link>
+            <Link to={'/calendario'} className="botonIngresar">Ingresar</Link>
             
         </form>
     )
