@@ -1,19 +1,41 @@
 import React from 'react';
 import './Forms.css'
+import Timer from './Timer';
+import BotonEnviar from './BotonEnviar';
 
 
-function FormDatos(){
+
+function FormDatos(array){
+
+    const selectElement = document.getElementById('diasEjercicios');
+
+    for (let i = 0; i < array.length; i++) {
+        let option = document.createElement('option'); // Crear un nuevo elemento <option>
+        option.value = `valor${i}`; // Asignar un valor a la opción
+        option.textContent = array[i]; // Asignar el texto visible de la opción
+        selectElement.appendChild(option); // Agregar la opción al <select>
+        selectElement.addClassName('inputT')
+    }
+    
+
+    
     return(
+        <>
         <form method='post' className='formCrear'>
-            <select>
-                <option value={option1} className='select'>{option1}</option>
-                <option value={option2} className='select'>{option2}</option>
-                <option value={option3} className='select'>{option3}</option>
-                <option value={option4} className='select'>{option4}</option>
-                <option value={option5} className='select'>{option5}</option>
-                <option value={option6} className='select'>{option6}</option>
+            <label for='ejercicio' className='labelT'>Selecciona el ejercicio</label>
+            <select className='diasEjercicios' name='ejercicio'>
+                
             </select>
+            <label htmlFor="reps" className='labelT'>Ingresa numero de repeticiones</label>
+            <input type='number' name='reps' placeholder='Ingresa numero de repeticiones' required className='inputT' />
+            <label htmlFor="tiempo" className='labelT'>Ingresa numero de repeticiones</label>
+            <Timer />
+            <label htmlFor="peso" className='labelT'>Ingresa numero de repeticiones</label>
+            <input type='text' name='peso' placeholder='Ingresa el peso o banda que usaste' className='inputT' required />
+
         </form>
+        <BotonEnviar />
+        </>
     )
 };
 
