@@ -18,9 +18,7 @@ function BotonCrear ()  {
     return (
         <>
     
-        {componentes.map((id) => (
-                <FormDatos key={id} id={id} />
-            ))}
+        {componentes.map((id) => (<FormDatos key={id} id={id} />))}
         <div className='boton'>
             <button onClick={manejarClick} className='bCrear'>
                 <img src={mas} className='iconC' />
