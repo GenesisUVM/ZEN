@@ -13,6 +13,7 @@
     position: fixed;
     left: 80%;
     top: 80%;
+    z-index: 1;
 }
 
 .boton{
@@ -34,4 +35,18 @@
 
 .icon{
     width: 2rem;
+}
+
+
+@media only screen and (min-width: 768px){
+    .boton{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 1600px){
+    .boton{
+        width: 40%;
+    }
 }

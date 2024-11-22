@@ -20,11 +20,14 @@ form{
     font-size: 1.5rem;
     display: flex;
     margin: auto;
-    border-radius: 0.5rem;
-    border-color: #fff;
+    border-radius: 0.8rem;
+    border-color: #D5C28F;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     padding: 0.8rem;
+    background: #D5C28F;
+    color: #000;
+
 }
 
 .input{

@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from "../../componentes/NavBar"
-import FooterAdm from "../../componentes/FooterAdm"
-import Busqueda from "../../componentes/Busqueda"
-import TarjetaUsuarios from "../../componentes/TarjetaUsuarios"
+import NavBar from "../componentes/NavBar"
+import FooterAdm from "../componentes/FooterAdm"
+import Busqueda from "../componentes/Busqueda"
+import TarjetaUsuarios from "../componentes/TarjetaUsuarios"
 import './UsuarioAdm.css'
 
 

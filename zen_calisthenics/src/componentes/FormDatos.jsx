@@ -32,7 +32,8 @@ function FormDatos(array){
             <Timer />
             <label htmlFor="peso" className='labelT'>Ingresa numero de repeticiones</label>
             <input type='text' name='peso' placeholder='Ingresa el peso o banda que usaste' className='inputT' required />
-
+            <label htmlFor="coment" className='labelT'>Ingresa un comentario sobre el ejercicio</label>
+            <input type='text' name='coment' placeholder='Ingresa comentario' className='inputT' required />
         </form>
         <BotonEnviar />
         </>

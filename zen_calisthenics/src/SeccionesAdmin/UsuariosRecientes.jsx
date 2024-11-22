@@ -1,14 +1,15 @@
 import React from 'react';
-import NavBar from "../../componentes/NavBar"
-import FooterAdm from "../../componentes/FooterAdm"
-import TarjetaUsuarios from "../../componentes/TarjetaUsuarios"
+import NavBar from "../componentes/NavBar"
+import FooterAdm from "../componentes/FooterAdm"
+import TarjetaUsuarios from "../componentes/TarjetaUsuarios"
 import './UsuarioAdm.css'
 
 
-function UsuariosGuardados(){
+function UsuariosRecientes(){
+
     return(
         <>
-        < NavBar />
+        <NavBar />
         <div className="contPerfiles">
         <TarjetaUsuarios />
             <TarjetaUsuarios />
@@ -24,4 +25,5 @@ function UsuariosGuardados(){
     )
 };
 
-export default UsuariosGuardados
+
+export default UsuariosRecientes

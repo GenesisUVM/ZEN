@@ -5,10 +5,10 @@ import './App.css'
 import InicioAdmin from './InicioSesiones/InicioAdmin'
 import InicioUsuarios from "./InicioSesiones/InicioUsuarios";
 import CreacionUsuario from "./InicioSesiones/CreacionUsuario";
-import UsuariosAlfabetico from "./SeccionesAdmin/VistasPerfiles/UsuaiosAlfabetico";
-import UsuariosGuardados from "./SeccionesAdmin/VistasPerfiles/UsuariosGuardados";
-import UsuariosRecientes from "./SeccionesAdmin/VistasPerfiles/UsuariosRecientes";
-import VistaBusqueda from "./SeccionesAdmin/VistasPerfiles/VistaBusqueda";
+import UsuariosAlfabetico from "./SeccionesAdmin/UsuaiosAlfabetico";
+import UsuariosGuardados from "./SeccionesAdmin/UsuariosGuardados";
+import UsuariosRecientes from "./SeccionesAdmin/UsuariosRecientes";
+import VistaBusqueda from "./SeccionesAdmin/VistaBusqueda";
 import ConfAdm from './SeccionesAdmin/VistasPerfiles/ConfAdm'
 import IngresoDatos from './SeccionesUsuarios/IngresoDatos';
 import EstadisticasU from './SeccionesUsuarios/EstadisticasU';
