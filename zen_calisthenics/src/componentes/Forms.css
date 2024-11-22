@@ -13,6 +13,7 @@ form{
     top: 7rem;
     margin: auto;
     background: #C2FCF7;
+    margin-top: 2.5rem;
 }
 
 .inputT, .diasEjercicios{
@@ -28,6 +29,11 @@ form{
     background: #D5C28F;
     color: #000;
 
+}
+
+.reloj{
+    display: flex;
+    
 }
 
 .input{

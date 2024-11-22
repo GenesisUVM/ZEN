@@ -22,15 +22,18 @@ function FormDatos(array){
     return(
         <>
         <form method='post' className='formCrear'>
-            <label for='ejercicio' className='labelT'>Selecciona el ejercicio</label>
+            <label htmlFor='ejercicio' className='labelT'>Selecciona el ejercicio</label>
             <select className='diasEjercicios' name='ejercicio'>
                 
             </select>
             <label htmlFor="reps" className='labelT'>Ingresa numero de repeticiones</label>
             <input type='number' name='reps' placeholder='Ingresa numero de repeticiones' required className='inputT' />
-            <label htmlFor="tiempo" className='labelT'>Ingresa numero de repeticiones</label>
-            <Timer />
-            <label htmlFor="peso" className='labelT'>Ingresa numero de repeticiones</label>
+            <label htmlFor="tiempo" className='labelT'>Ingresa tiempo de desacanso</label>
+            <div className='reloj'>
+                <Timer tipo="minutos"/>
+                <Timer tipo="segundos"/>
+            </div>
+            <label htmlFor="peso" className='labelT'>Ingresa el peso usado</label>
             <input type='text' name='peso' placeholder='Ingresa el peso o banda que usaste' className='inputT' required />
             <label htmlFor="coment" className='labelT'>Ingresa un comentario sobre el ejercicio</label>
             <input type='text' name='coment' placeholder='Ingresa comentario' className='inputT' required />

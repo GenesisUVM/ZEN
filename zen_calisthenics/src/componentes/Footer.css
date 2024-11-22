@@ -1,4 +1,4 @@
-.footerIniSesion{
+.footerIniSesion , .footerAdmPerf{
     background: #57737A;
     display: flex;
     justify-content: space-around;
@@ -6,6 +6,7 @@
     bottom: 0;
     width: 100%;
 }
+
 
 .imgIcons{
     width: 4.5rem;

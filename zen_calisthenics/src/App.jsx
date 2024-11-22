@@ -9,11 +9,12 @@ import UsuariosAlfabetico from "./SeccionesAdmin/UsuaiosAlfabetico";
 import UsuariosGuardados from "./SeccionesAdmin/UsuariosGuardados";
 import UsuariosRecientes from "./SeccionesAdmin/UsuariosRecientes";
 import VistaBusqueda from "./SeccionesAdmin/VistaBusqueda";
-import ConfAdm from './SeccionesAdmin/VistasPerfiles/ConfAdm'
+import ConfAdm from './SeccionesAdmin/ConfAdm'
 import IngresoDatos from './SeccionesUsuarios/IngresoDatos';
 import EstadisticasU from './SeccionesUsuarios/EstadisticasU';
 import Calendario from './SeccionesUsuarios/Calendario';
-
+import CalendarioAdm from './SeccionesAdmin/VistaPerfiles/CalendarioAdm';
+import EstadisticasAdm from './SeccionesAdmin/VistaPerfiles/EstadisticasAdm';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
         <Route path='/calendario' element={<Calendario />} />
         <Route path='/ingresarDatos' element={<IngresoDatos />} />
         <Route path='/estadisticas' element={<EstadisticasU />} />
+        <Route path='/perfiles' element={<CalendarioAdm />} />
+        <Route path='/estadisticasAdm' element={<EstadisticasAdm />} />
           
       </Routes> 
     </BrowserRouter>   

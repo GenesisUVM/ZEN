@@ -5,6 +5,16 @@
     justify-content: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    cursor: pointer;
+    
+}
+.inputMin, .inputSeg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10rem; 
+    cursor: pointer;
+    transform: rotate(-90deg);
 }
 
 .inputTime{
@@ -12,4 +22,22 @@
     border: none;
 
 }
+.numerosVerticales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 10rem; 
+}
+.numero {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
 
+
+.activo {
+    font-weight: bold;
+    color: blue; 
+    opacity: 1; 
+}

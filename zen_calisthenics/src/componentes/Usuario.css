@@ -1,19 +1,21 @@
 
 .contPerfil{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 80%;
     position: relative;
     left: 15%;
-    top: 5rem;
+    top: 8rem;
+    
 }
 
 .imgPerfil{
-    width: 10rem;
+    width: 6rem;
 }
 
 .namePerfil{
     color: #000;
     font-size: 2rem;
     font-weight: 400;
+    padding-left: 1rem;
 }
