@@ -9,12 +9,13 @@ form{
    
 }
 
-.formCrear{
+.formCrear,  .qEjercicio{
     top: 7rem;
     margin: auto;
     background: #C2FCF7;
     margin-top: 2.5rem;
 }
+
 
 .inputT, .diasEjercicios{
     width: 85%;
@@ -27,8 +28,12 @@ form{
     margin-bottom: 1.5rem;
     padding: 0.8rem;
     background: #D5C28F;
-    color: #000;
+    color: #000 !important;
 
+}
+
+.diasEjercicios option{
+    color: #000;
 }
 
 .reloj{

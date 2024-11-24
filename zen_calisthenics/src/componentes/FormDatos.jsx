@@ -2,30 +2,63 @@ import React from 'react';
 import './Forms.css'
 import Timer from './Timer';
 import BotonEnviar from './BotonEnviar';
+import  { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import DiaEjercicio from './DiaEjercicio';
 
 
+function FormDatos(){
 
-function FormDatos(array){
+    const location = useLocation();
+    const { selectedDate } = location.state || { selectedDate: new Date() };
+    const [data, setData] = useState({}); // Para almacenar datos por fecha
+  
+    const handleSaveData = (event) => {
+      event.preventDefault();
+      const inputData = event.target.elements.data.value;
+      setData((prevData) => ({
+        ...prevData,
+        [selectedDate.toDateString()]: inputData, // Guarda los datos con la fecha como clave
+      }));
+      event.target.reset(); // Limpia el formulario
+    };
 
-    const selectElement = document.getElementById('diasEjercicios');
+    //Funcionalidad del Select dinamico
+    // OBjeto con los options de ambos select
 
-    for (let i = 0; i < array.length; i++) {
-        let option = document.createElement('option'); // Crear un nuevo elemento <option>
-        option.value = `valor${i}`; // Asignar un valor a la opción
-        option.textContent = array[i]; // Asignar el texto visible de la opción
-        selectElement.appendChild(option); // Agregar la opción al <select>
-        selectElement.addClassName('inputT')
-    }
-    
+    const options = [
+        { value: 'Patada baja de glueo'},{ value: 'EmpujPeso Muertoe' },{ value: 'Bulgaras' },
+        { value: 'Sentadillas 3s' },{ value: 'Paralelas' },{ value: 'Flexiones Diamante' },{ value: 'Extensiones Triceps'},
+        { value: 'Flexiones Picas'},{ value: 'Paradas de mano'},{ value: 'Dominadas'},{ value: 'Curl Bicep'},
+        { value: 'Remo'},{ value: 'Burpees'},{ value: 'Escaladoras'},{ value: 'Sentadillas con salto'},
+        { value: 'Cuerda'},{ value: 'Saltos'},{ value: 'MAriposa'},
+        { value: 'FLexiones ventrales'},{ value: 'Balistica'},{ value: 'Aperturas'},
+      ];
 
+      const [selectedOption, setSelectedOption] = useState('');
+
+        const handleChange = (event) => {
+            setSelectedOption(event.target.value);
+        };
+
+      
     
     return(
         <>
-        <form method='post' className='formCrear'>
+        <form method='post' onSubmit={handleSaveData} className='formCrear'>
+            <h2>{handleSaveData}</h2>
             <label htmlFor='ejercicio' className='labelT'>Selecciona el ejercicio</label>
-            <select className='diasEjercicios' name='ejercicio'>
+            <select className='diasEjercicios' value={selectedOption} onChange={handleChange} name='ejercicio'>
+            <option value="">--Selecciona una opción--</option>
+                {options.map((option) => (
+                    <option key={option.value} value={option.value}>
+                    {option.label}
+                    </option>
+                ))}
                 
             </select>
+            {selectedOption}
+
             <label htmlFor="reps" className='labelT'>Ingresa numero de repeticiones</label>
             <input type='number' name='reps' placeholder='Ingresa numero de repeticiones' required className='inputT' />
             <label htmlFor="tiempo" className='labelT'>Ingresa tiempo de desacanso</label>
@@ -39,6 +72,7 @@ function FormDatos(array){
             <input type='text' name='coment' placeholder='Ingresa comentario' className='inputT' required />
         </form>
         <BotonEnviar />
+
         </>
     )
 };

@@ -7,13 +7,14 @@
     color: #F9FBF2;
     border-radius: 1rem;
     margin-top: 1em;
-    padding: 0.6rem;
-    width: 15%;
+    padding: 0.8rem;
+    width: 22%;
     border-color: #0E1C36;
     position: fixed;
-    left: 80%;
+    left: 75%;
     top: 80%;
     z-index: 1;
+    font-size: 1.5rem;
 }
 
 .boton{

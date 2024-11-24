@@ -2,7 +2,7 @@ import {mongoose} from "mongoose"
 
 export const connectDB = async()=>{
     try{
-        await mongoose.connect('mongodb+srv://genesis:genesis@cluster0.msjhg.mongodb.net/');
+        await mongoose.connect('mongodb://localhost/zen');
         console.log('>>> DB esta conectada')
     } 
     catch(error){

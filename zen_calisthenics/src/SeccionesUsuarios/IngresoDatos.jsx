@@ -4,17 +4,18 @@ import FooterUsuario from '../componentes/FooterUsuarios';
 import NavBar from '../componentes/NavBar';
 import FormDatos from '../componentes/FormDatos';
 import BotonCrear from '../componentes/BotonCrear';
+import DiaEjercicio from '../componentes/DiaEjercicio';
 
 
 
 function IngresoDatos(){
 
-    let ejercicios = ['Piernas', 'Empuje', 'Jalon','Aerobicos', 'Potencia','Estiramiento'];
-
+    
     return(
         <div className='contDatos'>
         <NavBar />
-        <FormDatos array={ejercicios} />
+        <DiaEjercicio />
+        <FormDatos  />
         <BotonCrear />
         <FooterUsuario />
         </div>

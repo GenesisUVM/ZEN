@@ -2,6 +2,7 @@ import React from 'react';
 import Usuario from '../../componentes/Usuario';
 import NavBar from '../../componentes/NavBar';
 import FooterAdmPerfiles from '../../componentes/FooterAdmPerfiles';
+import CalendarioCompAd from '../../componentes/CalendarioCompAd';
 
 
 function CalendarioAdm(){
@@ -9,6 +10,7 @@ function CalendarioAdm(){
         <>
         <NavBar />
         <Usuario />
+        <CalendarioCompAd />
         <FooterAdmPerfiles />
         </>
     )

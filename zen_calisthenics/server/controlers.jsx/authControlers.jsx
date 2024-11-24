@@ -1,3 +1,3 @@
 
-export const registro = (req, res) => {};
-export const login = (req, res) => {};
+export const registro = (req, res) => res.send('register');
+export const login = (req, res) => res.send('register');
