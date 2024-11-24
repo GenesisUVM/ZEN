@@ -11,4 +11,9 @@ export default defineConfig({
       input: './src/main.jsx',
     },
   },
+  server: {
+    proxy: {
+      '/api': 'http://localhost:4000', 
+    },
+  },
 })
