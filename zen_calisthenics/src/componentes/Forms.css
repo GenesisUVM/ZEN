@@ -19,14 +19,14 @@ form{
 
 .inputT, .diasEjercicios{
     width: 85%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     margin: auto;
     border-radius: 0.8rem;
     border-color: #D5C28F;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    padding: 0.8rem;
+    padding: 1.2rem;
     background: #D5C28F;
     color: #000 !important;
 
@@ -43,13 +43,14 @@ form{
 
 .input{
     width: 85%;
-    font-size: 2rem;
+    font-size: 1.2rem;
     display: flex;
     margin: auto;
     border-radius: 0.5rem;
     border-color: #fff;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 0.8rem;
 }
 
 .labelT{

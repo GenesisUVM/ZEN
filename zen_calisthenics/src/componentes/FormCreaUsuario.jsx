@@ -1,16 +1,27 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
 import './Forms.css'
+import {useForm} from 'react-hook-form'
+import {registerRequest} from '../api/auth.js'
 
 
 function FormCreaUsuario(){
+    const { register, handleSubmit } = useForm();
 
+    const onSubmit = handleSubmit(async(values) => {
+        console.log(values);
+        const res = await registerRequest(values)
+        console.log(res)
+    })
     return(
-        <form method='post' className='formCrear'>
-            <label className='label'>Ingrese Ususario<input type="text" name="usuario" className="input" /></label>
-            <label className='label'>Ingrese Correo<input type="email" name="correo" className="input"/></label>
-            <label className='label'>Ingrese Contraseña<input type="text" name="contrasena" className="input"/></label>
-            <label className='label'>Ingrese Telefono<input type="number" name="telefono" className="input"/></label>
+        <form onSubmit={onSubmit} className='formCrear'>
+            <label className='label'>Ingrese Ususario<input type="text" name="usuario" className="input" {...register( 'nombre_usuario', { require : true })}/></label>
+            <label className='label'>Ingrese Nombre<input type="text" name="nombre" className="input" {...register( 'nombre', { require : true })}/></label>
+            <label className='label'>Ingrese Correo<input type="email" name="correo" className="input" {...register( 'correo', { require : true })}/></label>
+            <label className='label'>Ingrese Contraseña<input type="text" name="contrasena" className="input" {...register( 'contrasena', { require : true })}/></label>
+            <label className='label'>Ingrese Telefono<input type="number" name="telefono" className="input" {...register( 'numero', { require : true })}/></label>
+            <label className='label'>Ingrese Rol<input type="text" name="rol" className="input" {...register( 'rol', { require : true })}/></label>
+            <button type='submit' className="botonIngresar">Ingresar</button>
             <Link to={'/usuarios'} className="botonIngresar">Registrar</Link>
         </form>
     )
